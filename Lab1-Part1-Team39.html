@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Lab1-Part1-Team39.css">
+    <title>Electronics-Center</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter text here">
+    <div class="dropdown__container">
+        <select id="action">
+            <option value="0">Archive</option>
+            <option value="1">Edit</option>
+            <option value="2">Delete</option>
+            <option value="3">Collection</option>
+        </select>
+        <select id="type">
+            <option value="0">Laptop</option>
+            <option value="1">NoteBook</option>
+            <option value="2">Tablet</option>
+            <option value="3">CellPhone</option>
+        </select>
+    </div>
+    <div class="table__container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Year</th>
+                    <th>Type</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="radio" name="device">
+                        <img src="./images/laptop.jpg" alt="Laptop" style="width: 100px; height: auto;">
+                    </td>
+                    <td>MacBook Pro</td>
+                    <td>Apple</td>
+                    <td>2024</td>
+                    <td>Laptop</td>
+                    <td>
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="device">
+                        <img src="./images/tablet.jpg" alt="Tablet" style="width: 100px; height: auto;">
+                    </td>
+                    <td>Ipad 10</td>
+                    <td>Apple</td>
+                    <td>2022</td>
+                    <td>Tablet</td>
+                    <td>
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="device">
+                        <img src="./images/phone.jpg" alt="Phone" style="width: 100px; height: auto;">
+                    </td>
+                    <td>Galaxy S24</td>
+                    <td>Samsung</td>
+                    <td>2024</td>
+                    <td>CellPhone</td>
+                    <td>
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+</body>
+</html>
