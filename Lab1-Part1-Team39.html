@@ -7,14 +7,21 @@
     <title>Electronics-Center</title>
 </head>
 <body>
-    <input type="text" placeholder="Enter text here">
-    <div class="dropdown__container">
+    <header>
+        <h1>Electronics-Center</h1>
+    </header>
+    <div class="controls">
+        <label for="action">Action:</label>
         <select id="action">
             <option value="0">Archive</option>
             <option value="1">Edit</option>
             <option value="2">Delete</option>
             <option value="3">Collection</option>
         </select>
+
+        <input type="text" placeholder="Enter text here">
+
+        <label for="type">Type:</label>
         <select id="type">
             <option value="0">Laptop</option>
             <option value="1">NoteBook</option>
@@ -22,6 +29,7 @@
             <option value="3">CellPhone</option>
         </select>
     </div>
+
     <div class="table__container">
         <table>
             <thead>
@@ -37,30 +45,35 @@
             <tbody>
                 <tr>
                     <td>
-                        <input type="radio" name="device">
-                        <img src="./images/laptop.jpg" alt="Laptop" style="width: 100px; height: auto;">
+                        <div class="radio-image">
+                            <input type="radio" name="device">
+                            <img src="./images/laptop.jpg" alt="Laptop" style="width: 100px; height: auto;">
+                        </div>
                     </td>
                     <td>MacBook Pro</td>
                     <td>Apple</td>
                     <td>2024</td>
                     <td>Laptop</td>
-                    <td>
+                    <td class="actions">
                         <button>Archive</button>
                         <button>Edit</button>
                         <button>Delete</button>
                         <button>Collection</button>
                     </td>
                 </tr>
+
                 <tr>
                     <td>
-                        <input type="radio" name="device">
-                        <img src="./images/tablet.jpg" alt="Tablet" style="width: 100px; height: auto;">
-                    </td>
+                        <div class="radio-image">
+                            <input type="radio" name="device">
+                            <img src="./images/tablet.jpg" alt="Tablet" style="width: 100px; height: auto;">
+                        </div>
+                     </td>
                     <td>Ipad 10</td>
                     <td>Apple</td>
                     <td>2022</td>
                     <td>Tablet</td>
-                    <td>
+                    <td class = "actions">
                         <button>Archive</button>
                         <button>Edit</button>
                         <button>Delete</button>
@@ -69,23 +82,44 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" name="device">
-                        <img src="./images/phone.jpg" alt="Phone" style="width: 100px; height: auto;">
+
+                        <div class="radio-image">
+                            <input type="radio" name="device">
+                            <img src="./images/phone.jpg" alt="Phone" style="width: 100px; height: auto;">
+                        </div>
+
                     </td>
                     <td>Galaxy S24</td>
                     <td>Samsung</td>
                     <td>2024</td>
                     <td>CellPhone</td>
-                    <td>
+                    <td class = "actions">
                         <button>Archive</button>
                         <button>Edit</button>
                         <button>Delete</button>
                         <button>Collection</button>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <div class="radio-image">
+                            <input type="radio" name="device">
+                            <img src="./images/notebook.jpg" alt="Notebook" style="width: 100px; height: auto;">
+                        </div>
+                    </td>
+                    <td>NoteBook Blue</td>
+                    <td>Apple</td>
+                    <td>2024</td>
+                    <td>NoteBook</td>
+                    <td class = "actions">
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
             </tbody>
             
         </table>
     </div>
 </body>
-</html>
+</html> 
