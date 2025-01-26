@@ -1,17 +1,169 @@
+/* General Body and Header Styles */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
 }
-th,
-td {
-  border: 1px solid rgb(160 160 160);
-  padding: 8px 10px;
+
+header {
+  background-color: #ff007b;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2rem; /* Reduced for better scaling */
+  font-weight: bold;
+  width: 100%;
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 1000px;
+  gap: 10px;
+}
+
+.controls label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Table Styles */
+.table__container {
+  margin: 10px auto;
+  width: 90%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem; /* Reduce font size for scaling */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px; /* Reduced padding */
   text-align: center;
 }
 
-img {
-    width: 80%;
-    height: auto;
+th {
+  background-color: #ff007b;
+  color: white;
+  font-size: 1rem;
 }
+
+/* Radio Button and Image Styling */
+.radio-image {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.radio-image input[type="radio"] {
+  margin: 0;
+}
+
+img {
+  max-width: 100px; /* Reduce image size */
+  height: auto;
+}
+
+/* Buttons */
+button {
+  margin: 2px;
+  padding: 4px 8px;
+  background-color: #b30092;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem; /* Reduced button font size */
+}
+
+button:hover {
+  background-color: #b30045;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+  }
+
+  .controls {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  input[type="text"], select {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  img {
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .controls {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 5px;
+     /* Ensure it scales to the screen */
+  }
+
+  input[type="text"], select {
+    font-size: 0.8rem;
+    padding: 4px;
+  }
+
+  input[type="text"] {
+    flex-grow: 1; /* Ensure the text input stretches to fill space */
+  }
+
+  select {
+    width: 80px; /* Reduce dropdown width */
+  }
+
+  table {
+    font-size: 0.7rem;
+  }
+
+  th, td {
+    padding: 4px;
+  }
+
+    img {
+      max-width: 40px;
+    }
+  }
