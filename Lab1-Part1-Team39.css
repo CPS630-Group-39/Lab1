@@ -131,39 +131,16 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-  header {
-    font-size: 1.2rem;
-    padding: 10px;
-  }
-
-  .controls {
-    flex-wrap: nowrap; /* Prevent wrapping */
-    gap: 5px;
-     /* Ensure it scales to the screen */
-  }
-
-  input[type="text"], select {
-    font-size: 0.8rem;
-    padding: 4px;
-  }
-
-  input[type="text"] {
-    flex-grow: 1; /* Ensure the text input stretches to fill space */
-  }
-
-  select {
-    width: 80px; /* Reduce dropdown width */
-  }
-
-  table {
-    font-size: 0.7rem;
-  }
-
-  th, td {
-    padding: 4px;
-  }
-
-    img {
-      max-width: 40px;
+    .controls {
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    .controls .action__container,.controls .type__container, select {
+      width: 25%;
+      font-size: 0.8em;
+    }
+    .controls input{
+      width: 20%;
     }
   }

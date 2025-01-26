@@ -11,23 +11,25 @@
         <h1>Electronics-Center</h1>
     </header>
     <div class="controls">
-        <label for="action">Action:</label>
-        <select id="action">
-            <option value="0">Archive</option>
-            <option value="1">Edit</option>
-            <option value="2">Delete</option>
-            <option value="3">Collection</option>
-        </select>
-
+        <div class="action__container">
+            <label for="action">Action:</label>
+            <select id="action">
+                <option value="0">Archive</option>
+                <option value="1">Edit</option>
+                <option value="2">Delete</option>
+                <option value="3">Collection</option>
+            </select>
+        </div>
         <input type="text" placeholder="Enter text here">
-
-        <label for="type">Type:</label>
-        <select id="type">
-            <option value="0">Laptop</option>
-            <option value="1">NoteBook</option>
-            <option value="2">Tablet</option>
-            <option value="3">CellPhone</option>
-        </select>
+        <div class="type__container">
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="0">Laptop</option>
+                <option value="1">NoteBook</option>
+                <option value="2">Tablet</option>
+                <option value="3">CellPhone</option>
+            </select>
+        </div>
     </div>
 
     <div class="table__container">
@@ -100,25 +102,7 @@
                         <button>Collection</button>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <div class="radio-image">
-                            <input type="radio" name="device">
-                            <img src="./images/notebook.jpg" alt="Notebook" style="width: 100px; height: auto;">
-                        </div>
-                    </td>
-                    <td>NoteBook Blue</td>
-                    <td>Apple</td>
-                    <td>2024</td>
-                    <td>NoteBook</td>
-                    <td class = "actions">
-                        <button>Archive</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                        <button>Collection</button>
-                    </td>
             </tbody>
-            
         </table>
     </div>
 </body>
