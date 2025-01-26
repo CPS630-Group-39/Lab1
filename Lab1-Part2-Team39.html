@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Lab1-Part2-Team39.css">
+    <title>Electronics-Center</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Electronics-Center</h1>
+    </header>
+    <div class="controls">
+        <div class="action__container">
+            <label for="action">Action:</label>
+            <select id="action">
+                <option value="0">Archive</option>
+                <option value="1">Edit</option>
+                <option value="2">Delete</option>
+                <option value="3">Collection</option>
+            </select>
+        </div>
+        <input type="text" placeholder="Enter text here">
+        <div class="type__container">
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="0">Laptop</option>
+                <option value="1">NoteBook</option>
+                <option value="2">Tablet</option>
+                <option value="3">CellPhone</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="table__container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Year</th>
+                    <th>Type</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="radio-image">
+                            <input type="radio" name="laptopIMG" class="fadeIn" value="" checked>
+                            <input type="radio" name="laptopIMG" class="fadeOut">
+                            <img src="./images/laptop.jpg" alt="Laptop" style="width: 100px; height: auto;">
+                        </div>
+                    </td>
+                    <td>
+                        <input type="radio" name="laptopName" class="fadeIn" value="" checked>
+                        <input type="radio" name="laptopName" class="fadeOut">
+                        <div class="fade">MacBook Pro</div>
+                    </td>
+                    <td>
+                        <input type="radio" name="laptopCompany" class="fadeIn" value="" checked>
+                        <input type="radio" name="laptopCompany" class="fadeOut">
+                        <div class="fade">Apple</div>
+                    </td>
+                    <td>
+                        <input type="radio" name="laptopYear" class="fadeIn" value="" checked>
+                        <input type="radio" name="laptopYear" class="fadeOut">
+                        <div class="fade">2024</div>
+                    </td>
+                    <td>
+                        <input type="radio" name="laptopType" class="fadeIn" value="" checked>
+                        <input type="radio" name="laptopType" class="fadeOut">
+                        <div class="fade">Laptop</div>
+                    </td>
+                    <td class="actions">
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="radio-image">
+                            <input type="radio" name="tabletIMG" class="fadeIn" value="" checked>
+                            <input type="radio" name="tabletIMG" class="fadeOut">
+                            <img src="./images/tablet.jpg" alt="Tablet" style="width: 100px; height: auto;">
+                        </div>
+                     </td>
+                    <td>
+                        <input type="radio" name="ipadName" class="fadeIn" value="" checked>
+                        <input type="radio" name="ipadName" class="fadeOut">
+                        <div class="fade">Ipad 10</div>
+                    </td>
+                    <td>
+                        <input type="radio" name="ipadCompany" class="fadeIn" value="" checked>
+                        <input type="radio" name="ipadCompany" class="fadeOut">
+                        <div class="fade">Apple</div>
+                    </td>
+                    <td>
+                        <input type="radio" name="ipadYear" class="fadeIn" value="" checked>
+                        <input type="radio" name="ipadYear" class="fadeOut">
+                        <div class="fade">2022</div>
+                    </td>
+                    <td>
+                        <input type="radio" name="ipadType" class="fadeIn" value="" checked>
+                        <input type="radio" name="ipadType" class="fadeOut">
+                        <div class="fade">Tablet</div>
+                    </td>
+                    <td class = "actions">
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="radio-image">
+                            <input type="radio" name="phoneIMG" class="fadeIn" value="" checked>
+                            <input type="radio" name="phoneIMG" class="fadeOut">
+                            <img src="./images/phone.jpg" alt="Phone" style="width: 100px; height: auto;">
+                        </div>
+
+                    </td>
+                    <td>
+                        <input type="radio" name="phoneName" class="fadeIn" value="" checked>
+                        <input type="radio" name="phoneName" class="fadeOut">
+                        <div class="fade">Galaxy S24</div>
+                    </td>
+                    <td>
+                        <input type="radio" name="phoneCompany" class="fadeIn" value="" checked>
+                        <input type="radio" name="phoneCompany" class="fadeOut">
+                        <div class="fade">Samsung</div>
+                    </td>
+                    <td>
+                        <input type="radio" name="phoneYear" class="fadeIn" value="" checked>
+                        <input type="radio" name="phoneYear" class="fadeOut">
+                        <div class="fade">2024</div>
+                    </td>
+                    <td>
+                        <input type="radio" name="phoneType" class="fadeIn" value="" checked>
+                        <input type="radio" name="phoneType" class="fadeOut">
+                        <div class="fade">CellPhone</div>
+                    </td>
+                    <td class = "actions">
+                        <button>Archive</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <button>Collection</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("header").animate({
+                left: "0%"
+            }, 2000);
+            
+            $(".fadeIn").click(function(){
+                $(this).siblings("img").fadeIn();
+                $(this).siblings(".fade").fadeIn();
+            });
+            
+            $(".fadeOut").click(function(){
+                $(this).siblings("img").fadeOut();
+                $(this).siblings(".fade").fadeOut();
+            });
+            
+        });
+    </script>
+</body>
+</html> 
